@@ -1,0 +1,9 @@
+# 01-beats-input.conf
+input {
+  beats {
+    port => 5044
+  }
+  beats {
+    port => 5045
+  }
+}
