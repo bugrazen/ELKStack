@@ -29,17 +29,19 @@ compose.yml: Orchestrates Elasticsearch, Logstash, and Kibana via Docker.
 
 Bu çalışma; Windows Domain Controller ve Microsoft Exchange Server loglarını merkezi bir noktada toplamak, anlamlandırmak ve siber güvenlik odaklı analiz etmek için geliştirilmiş bir ELK Stack mimarisidir.
 
-🚀 Öne Çıkan Özellikler
-Risk Skorlama Motoru: Güvenlik olaylarını Ruby scriptleri kullanarak 0 ile 100 arasında otomatik puanlar.
+**🚀 Öne Çıkan Özellikler**
 
-Active Directory Güvenliği: LAPS şifre okuma, kritik grup değişiklikleri ve UAC bayraklarındaki değişimleri anında tespit eder.
+--- Risk Skorlama Motoru: Güvenlik olaylarını Ruby scriptleri kullanarak 0 ile 100 arasında otomatik puanlar.
 
-Exchange Trafik Analizi: Message Tracking loglarını ayrıştırarak e-posta trafiğini şeffaf hale getirir.
+--- Active Directory Güvenliği: LAPS şifre okuma, kritik grup değişiklikleri ve UAC bayraklarındaki değişimleri anında tespit eder.
 
-Atak Tespiti: Kerberoasting, Brute Force ve Log temizleme gibi aktiviteler için hazır filtreler sunar.
+--- Exchange Trafik Analizi: Message Tracking loglarını ayrıştırarak e-posta trafiğini şeffaf hale getirir.
 
-⚙️ Kurulum / Installation
-Bash
+---Atak Tespiti: Kerberoasting, Brute Force ve Log temizleme gibi aktiviteler için hazır filtreler sunar.
+
+
+**⚙️ Kurulum / Installation
+Bash**
 
 # 1. Clone the repo
 git clone https://github.com/bugrazen/ELKStack.git
