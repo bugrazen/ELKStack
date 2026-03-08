@@ -1,8 +1,8 @@
 🛡️ Hybrid Windows & Exchange SIEM Pipeline (ELK Stack)
 English | Türkçe
 
-English
-📝 Project Overview
+**English**
+**📝 Project Overview**
 This project provides a comprehensive SIEM (Security Information and Event Management) solution built on the ELK Stack to monitor and analyze logs from Windows Domain Controllers and Microsoft Exchange Servers in real-time.
 
 🚀 Key Features
@@ -23,8 +23,8 @@ Attack Detection: Pre-configured filters for Kerberoasting, Brute Force, and Aud
 
 compose.yml: Orchestrates Elasticsearch, Logstash, and Kibana via Docker.
 
-Türkçe
-📝 Proje Hakkında
+**Türkçe**
+**📝 Proje Hakkında**
 Bu çalışma; Windows Domain Controller ve Microsoft Exchange Server loglarını merkezi bir noktada toplamak, anlamlandırmak ve siber güvenlik odaklı analiz etmek için geliştirilmiş bir ELK Stack mimarisidir.
 
 🚀 Öne Çıkan Özellikler
