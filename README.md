@@ -1,5 +1,5 @@
-🛡️ Hybrid Windows & Exchange SIEM Pipeline (ELK Stack)
-English | Türkçe
+**🛡️ Hybrid Windows & Exchange SIEM Pipeline (ELK Stack)
+English | Türkçe**
 
 **English**
 **📝 Project Overview**
