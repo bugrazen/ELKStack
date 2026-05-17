@@ -55,7 +55,7 @@ services:
     environment:
       - LS_JAVA_OPTS=-Xms512m -Xmx512m
       - ELASTIC_USER=elastic
-      - ELASTIC_PASSWORD=Javaloji!
+      - ELASTIC_PASSWORD=XXXXXX
     logging:
       driver: "json-file"
       options:
