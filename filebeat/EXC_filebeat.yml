@@ -20,15 +20,15 @@
 filebeat.inputs:
   - type: log
     paths:
-      - F:\TransportRoles\Logs\MessageTracking\MSGTRK*.LOG
+      - D:\TransportRoles\Logs\MessageTracking\MSGTRK*.LOG
     exclude_lines: ['^#', '^\s*$']
     tags: ["messagetracking"]
 
 
   #- type: log
   #  paths:
-  #    - F:\inetpub\logs\LogFiles\W3SVC1\u_ex*.log
-  #    - F:\inetpub\logs\LogFiles\W3SVC2\u_ex*.log
+  #    - D:\inetpub\logs\LogFiles\W3SVC1\u_ex*.log
+  #    - D:\inetpub\logs\LogFiles\W3SVC2\u_ex*.log
   #  tags: ["iis"]
 
   # Exclude lines. A list of regular expressions to match. It drops the lines that are
@@ -137,7 +137,7 @@ setup.template.settings:
 # ---------------------------- Elasticsearch Output ----------------------------
 #output.elasticsearch:
   # Array of hosts to connect to.
-  #hosts: ["172.22.22.171:9200"]
+  #hosts: ["xxx.xx.xx.xxx:9200"]
    
   # Protocol - either `http` (default) or `https`.
   #protocol: "https"
@@ -150,7 +150,7 @@ setup.template.settings:
 # ------------------------------ Logstash Output -------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["172.22.22.171:5044"]
+  hosts: ["xxx.xx.xx.xxx:5044"]
 
   # Optional SSL. By default is off.
   # List of root certificates for HTTPS server verifications
