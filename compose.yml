@@ -11,7 +11,7 @@ services:
       - bootstrap.memory_lock=true
       - xpack.security.enabled=true
       - ES_JAVA_OPTS=-Xms4g -Xmx4g
-      - ELASTIC_PASSWORD=Javaloji!
+      - ELASTIC_PASSWORD=P4sw0rd
     ulimits:
       memlock:
         soft: -1
@@ -34,7 +34,7 @@ services:
     environment:
       - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
       - ELASTICSEARCH_USERNAME=kibana_system
-      - ELASTICSEARCH_PASSWORD=Kibana123!
+      - ELASTICSEARCH_PASSWORD=XXXXXXX
     depends_on:
       - elasticsearch
     logging:
@@ -55,7 +55,7 @@ services:
     environment:
       - LS_JAVA_OPTS=-Xms512m -Xmx512m
       - ELASTIC_USER=elastic
-      - ELASTIC_PASSWORD=XXXXXX
+      - ELASTIC_PASSWORD=P4sw0rd
     logging:
       driver: "json-file"
       options:
