@@ -1,4 +1,4 @@
-# Windows & Exchange ELK Pipeline
+# Docker Compose and Conf files for ELKStack
 
 **English** | [Türkçe](#türkçe)
 
