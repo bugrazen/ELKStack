@@ -49,12 +49,23 @@ I put this together to stop digging through raw event logs. It centralizes Windo
 ```bash
 # 1. Clone the repo
 git clone https://github.com/bugrazen/ELKStack.git
+cd ELKStack
 
-# 2. Start the stack
-docker-compose up -d
+# 2. Create your env file and fill in the passwords
+cp .env.example .env
+
+# 3. Start the stack
+docker compose up -d
+
+# 4. Set the kibana_system password (after Elasticsearch is up)
+docker exec -it elasticsearch bin/elasticsearch-reset-password -u kibana_system -i
 ```
 
-**Requirements:** Just Docker and Docker Compose. Send your logs to port 5044 and you're good to go.
+Put the password from step 4 into `KIBANA_SYSTEM_PASSWORD` in `.env`, then
+`docker compose up -d kibana` to restart Kibana with it.
+
+**Requirements:** Docker and Docker Compose v2. Tested on Elastic Stack 9.4.2.
+Point Winlogbeat/Filebeat at port 5044.
 
 ---
 
@@ -109,9 +120,20 @@ Ham log yığınları içinde boğulmamak için hazırladığım bir ELK altyap�
 ```bash
 # 1. Repoyu klonla
 git clone https://github.com/bugrazen/ELKStack.git
+cd ELKStack
 
-# 2. Stack'i başlat
-docker-compose up -d
+# 2. Env dosyasını oluştur ve şifreleri doldur
+cp .env.example .env
+
+# 3. Stack'i başlat
+docker compose up -d
+
+# 4. kibana_system şifresini oluştur (Elasticsearch ayağa kalktıktan sonra)
+docker exec -it elasticsearch bin/elasticsearch-reset-password -u kibana_system -i
 ```
 
-**Gereksinimler:** Sadece Docker ve Docker Compose. Winlogbeat ile logları 5044'e gönderin, gerisini pipeline hallediyor.
+4. adımdaki şifreyi `.env` içindeki `KIBANA_SYSTEM_PASSWORD` alanına yazıp
+`docker compose up -d kibana` ile Kibana'yı yeniden başlatın.
+
+**Gereksinimler:** Docker ve Docker Compose v2. Elastic Stack 9.4.2 ile test edildi.
+Winlogbeat/Filebeat loglarını 5044 portuna gönderin.
