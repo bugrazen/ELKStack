@@ -19,7 +19,7 @@ services:
     ports:
       - "9200:9200"
     volumes:
-      - /mnt/elasticsearch-data:/usr/share/elasticsearch/data
+      - esdata:/usr/share/elasticsearch/data
     logging:
       driver: "json-file"
       options:
@@ -49,7 +49,7 @@ services:
     ports:
       - "5044:5044"
     volumes:
-      - /mnt/logstash/conf.d:/usr/share/logstash/pipeline
+      - ./logstash/conf.d:/usr/share/logstash/pipeline:ro
     depends_on:
       - elasticsearch
     environment:
