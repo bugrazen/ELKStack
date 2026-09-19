@@ -1,24 +1,31 @@
-# Compiled Object files
-*.o
-*.obj
+# --- Kökte her şeyi yoksay ---
+/*
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# --- İstisnalar: sadece bunlar repoya girsin ---
+!.gitignore
+!.gitattributes
+!.env.example
+!README.md
+!compose.yml
+!/logstash/
+!/filebeat/
+!/winlogbeat/
+!/docs/
 
-# Compiled Static libraries
-*.a
-*.lib
-
-# Executables
-*.exe
-
-# DUB
-.dub
-docs.json
-__dummy.html
-docs/
-
-# Code coverage
-*.lst
+# --- İzin verilen dizinlerin içindeki istenmeyenler ---
+**/.env
+**/.env.*
+!**/.env.example
+**/*.key
+**/*.pem
+**/*.crt
+**/*.p12
+**/*.pfx
+**/*.jks
+**/certs/
+**/*.save
+**/*.bak
+**/*.orig
+**/*.log
+**/*.swp
+**/*~
